@@ -25,7 +25,7 @@ function App() {
         <button>Fetch Blog Posts</button>
       </section>
       <section>
-        <PostsList blogs={dummyData} />
+        <PostsList posts={dummyData} />
       </section>
     </React.Fragment>
   );
