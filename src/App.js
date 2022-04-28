@@ -1,4 +1,5 @@
 import React from 'react';
+import PostsList from './components/PostsList'
 import './App.css';
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <button>Fetch Blog Posts</button>
       </section>
       <section>
-        <BlogList blogs={dummyData} />
+        <PostsList blogs={dummyData} />
       </section>
     </React.Fragment>
   );
