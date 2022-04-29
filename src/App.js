@@ -34,12 +34,14 @@ function App() {
 
   return (
     <React.Fragment>
-      <section>
-        <button onClick={fetchPostsHandler}>Fetch Blog Posts</button>
-      </section>
-      <section>
-        <PostsList posts={posts} />
-      </section>
+      <div className='container'>
+        <section>
+          <button onClick={fetchPostsHandler}>Fetch Blog Posts</button>
+        </section>
+        <section>
+          <PostsList posts={posts} />
+        </section>
+      </div>
     </React.Fragment>
   );
 }

@@ -1,20 +1,26 @@
 .post {
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #230052;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 12px;
-    text-align: center;
-    color: white;
+    text-align: left;
+    color: #111111;
+    cursor: pointer;
+  }
+  .post:hover {
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
   }
   
   .post h2 {
     font-size: 2rem;
-    color: #f7e702;
+    color: #111111;
   }
   
   .post h3 {
-    color: #eccf77;
+    color: #c0c0c0;
     margin: 0;
     font-size: 1rem;
+    font-weight: 300;
   }
