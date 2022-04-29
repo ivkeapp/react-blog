@@ -1,8 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PostsList from './components/PostsList'
 import './App.css';
 
 function App() {
+
+  const [posts, setPosts] = useState([]);
+
+  function fetchPostsHandler() {
+    fetch('http://localhost/ci4-rest-api/post')
+    .then(response => {
+      return response.json();
+    })
+    .then(data => {
+      setPosts(data.posts);
+      //console.log(posts);
+    });
+  }
 
   const dummyData = [
     {
@@ -22,10 +35,10 @@ function App() {
   return (
     <React.Fragment>
       <section>
-        <button>Fetch Blog Posts</button>
+        <button onClick={fetchPostsHandler}>Fetch Blog Posts</button>
       </section>
       <section>
-        <PostsList posts={dummyData} />
+        <PostsList posts={posts} />
       </section>
     </React.Fragment>
   );
