@@ -1,3 +1,15 @@
+# Blog React Application
+React Application for listing blog posts
+
+### Usage
+Just clone project, type `npm start` into terminal and click button "Fetch data"
+
+### Dependency
+The application is attached on a remote API which can be found:
+- Java version: [Spring Boot Rest Api](https://github.com/ivkeapp/sb-rest-api)
+- CodeIgniter 4 version: [CodeIgniter 4 Rest Api](https://github.com/ivkeapp/ci4-rest-api)
+- Live version: [Dummy Blog API](http://dummy-api.ivanzarkovic.com/post) (with this version you need to tweak blocked CORS policies)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
